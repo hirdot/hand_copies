@@ -1,8 +1,6 @@
 Vue.component('todo-item',{
-  template: '<li>this is a todo</li>'
-});
-Vue.component('hoge-item',{
-  template: '<li>this is a hoge</li>'
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
 });
 
 var app = new Vue({
@@ -14,6 +12,11 @@ var app = new Vue({
       {text: 'Learn JavaScript'},
       {text: 'Learn Vue'},
       {text: 'Build something awesome'}
+    ],
+    groceryList:[
+      {id: 0, text: 'Vegetables'},
+      {id: 1, text: 'Cheese'},
+      {id: 2, text: 'Whatever else humans are supposed to eat'}
     ]
   },
   methods: {
