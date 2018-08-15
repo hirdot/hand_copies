@@ -14,7 +14,7 @@
 
   <div>
     <input type="text" v-model="searchText">
-    <div v-show="hasIssue">
+    <div v-if="hasIssue">
       <div v-for="issue in filtered_issues"
            class="issue-default">
         <a :href="issue.html_url" target="_blank">
