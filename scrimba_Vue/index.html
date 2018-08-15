@@ -6,7 +6,7 @@
 <body>
 
 <div id="app">
-  {{ message }}
+  <p>{{ message }}</p>
   <span v-if="seen">Now you see me</span>
 
   <ol>
@@ -14,6 +14,8 @@
       {{ todo.text }}
     </li>
   </ol>
+
+  <button v-on:click="reverseMessage">Reverse Message</button>
 
 </div>
 
