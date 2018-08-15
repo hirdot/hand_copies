@@ -8,6 +8,13 @@
 <div id="app">
   {{ message }}
   <span v-if="seen">Now you see me</span>
+
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+
 </div>
 
 <script src="index.js"></script>
