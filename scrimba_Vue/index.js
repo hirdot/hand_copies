@@ -1,6 +1,9 @@
 Vue.component('todo-item',{
   template: '<li>this is a todo</li>'
 });
+Vue.component('hoge-item',{
+  template: '<li>this is a hoge</li>'
+});
 
 var app = new Vue({
   el: '#app',
