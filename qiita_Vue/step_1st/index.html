@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="todoApp">
+  <h2 v-bind:style="fontStyle">{{ title }}</h2>
+  <input type="text" v-model="todo" v-on:keyup.enter="addTodo">
+  <div>
+    <div v-for="t in todos"
+         v-bind:key="t.id"
+         v-bind:class="['todo-default', t.doing ? 'todo-doing' : '']"
+         v-on:click="begin(t)">
+      {{t.name}}
+    </div>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
