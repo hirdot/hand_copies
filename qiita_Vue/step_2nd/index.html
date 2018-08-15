@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="issues">
+  <h2>Latest {{repository}} Issues</h2>
+  <div>
+    <input type="text" v-model="repository">
+  </div>
+
+  <div>
+    <input type="text" v-model="searchText">
+    <div v-show="hasIssue">
+      <div v-for="issue in filtered_issues"
+           class="issue-default">
+        <a :href="issue.html_url" target="_blank">
+          {{issue.title}}
+        </a><br/>
+        <span>#{{issue.number}} at {{issue.updated_at | formatDate}}</span>
+      </div>
+    </div>
+    <div v-else>
+      The repository {{repository}} does not exist!
+    </div>
+  </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

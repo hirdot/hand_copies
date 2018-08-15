@@ -1,0 +1,13 @@
+.issue-default{
+  padding: 10px;
+}
+.issue-default a {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color:slategray;
+}
+.issue-default span {
+  color:#767676;
+  font-size: 12px;
+}
