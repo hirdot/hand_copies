@@ -9,9 +9,11 @@
       issues: []
     },
     created: function () {
+      // 初期化処理
       this.fetchData()
     },
     watch: {
+      // this.repository に変化があったら、method: fetchData を実行
       repository: "fetchData"
     },
     filters: {
