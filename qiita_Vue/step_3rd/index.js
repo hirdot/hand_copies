@@ -27,7 +27,7 @@ var app = new Vue({
       });
       this.todo = ""
     },
-    count: function(doing){
+    length: function(doing){
       this.doings += doing ? 1 : -1;
     }
   }

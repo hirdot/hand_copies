@@ -11,7 +11,7 @@
   <input type="text" v-model="todo" v-on:keyup.enter="addTodo">
   <span>doing {{doings}} / {{todos.length}} task</span>
   <div class="hoge">
-    <todo-template v-for="t in todos" :t="t" @todochanged="count"></todo-template>
+    <todo-template v-for="t in todos" :t="t" @todochanged="length"></todo-template>
   </div>
 </div>
 
