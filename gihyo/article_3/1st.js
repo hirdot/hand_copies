@@ -1,10 +1,13 @@
-Vue.component('apple-list', {
+var apples = Vue.extend({
+  template: '<li>{{fruit.name}}</li>',
   props: ['fruit'],
-  template: '<li>{{fruit.name}}</li>'
 });
 
 new Vue({
   el: '#fruits-component',
+  components: {
+    'apple-list': apples
+  },
   data: {
     fruits: [
       {name: '梨'},
