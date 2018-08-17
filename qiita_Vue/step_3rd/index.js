@@ -7,7 +7,12 @@ Vue.component("todo-template", {
   methods: {
     begin: function () {
       // this.task = !this.task;
+
       this.$emit("intermediary", this.task);
+      /*  "intermediary" > intermediary(HTML)
+                           > "task_count"
+                              > app.task_count(this.task)
+       */
     }
   }
 });
