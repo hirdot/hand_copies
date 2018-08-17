@@ -16,7 +16,8 @@ Vue.component("todo-template", {
 
       console.log("after:" + this.task);
       this.$emit("intermediary", this.task);
-      /*  "intermediary" > intermediary(HTML)
+      /* 子component -> 親VMへのメソッド連携の仕組み
+        "intermediary" > intermediary(HTML)
                            > "task_count"
                               > app.task_count(this.task)
        */
