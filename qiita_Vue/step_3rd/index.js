@@ -6,8 +6,15 @@ Vue.component("todo-template", {
   template: "#todo-template",
   methods: {
     begin: function () {
-      // this.task = !this.task;
+      console.log("before:" + this.task);
+      this.task = !this.task;
+      /* this.task は当初 undefined
+         一度、!this.task とすることで、boolean のパラメータに変換された！
+         これで、task_count に引数として渡すことで、T/F が渡され、
+         クリック毎に値が反転する。
+       */
 
+      console.log("after:" + this.task);
       this.$emit("intermediary", this.task);
       /*  "intermediary" > intermediary(HTML)
                            > "task_count"
