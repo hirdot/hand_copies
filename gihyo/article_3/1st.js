@@ -1,4 +1,4 @@
-Vue.component('fruits-lists', {
+Vue.component('apple-list', {
   props: ['fruitsItem'],
   template: '<li>{{fruitsItem.name}}</li>'
 });
