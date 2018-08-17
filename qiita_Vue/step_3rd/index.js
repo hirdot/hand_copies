@@ -35,8 +35,8 @@ var app = new Vue({
   methods: {
     add: function() {
       this.todos.push({
-        name: this.todo,
-        done: false
+        name: this.todo
+        // done: false
       });
       this.todo = ""
     },
