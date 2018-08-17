@@ -1,13 +1,13 @@
 Vue.component("todo-template", {
   props: ["t"],
-  data: function(){
+  data: function () {
     return { doing: false }
   },
   template: "#todo-template",
   methods: {
     begin: function () {
-      this.doing = !this.doing;
-      this.$emit("todochanged", this.doing);
+      this.task = !this.task;
+      this.$emit("donedoing", this.task);
     }
   }
 });
@@ -20,15 +20,15 @@ var app = new Vue({
     doings: 0
   },
   methods: {
-    addTodo: function() {
+    add: function() {
       this.todos.push({
         name: this.todo,
         done: false
       });
       this.todo = ""
     },
-    length: function(doing){
-      this.doings += doing ? 1 : -1;
+    length: function(task) {
+      this.doings += task ? 1 : -1;
     }
   }
 });

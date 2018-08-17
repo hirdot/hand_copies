@@ -8,10 +8,10 @@
 <body>
 <div id="todoApp">
   <h2>Todo with Component</h2>
-  <input type="text" v-model="todo" v-on:keyup.enter="addTodo">
+  <input type="text" v-model="todo" v-on:keyup.enter="add">
   <span>doing {{doings}} / {{todos.length}} task</span>
   <div class="hoge">
-    <todo-template v-for="t in todos" :t="t" @todochanged="length"></todo-template>
+    <todo-template v-for="t in todos" :t="t" @donedoing="length"></todo-template>
   </div>
 </div>
 
