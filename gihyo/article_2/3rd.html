@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>条件付きレンダリング</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="example">
+  <p>名前 {{ name }}</p>
+  <p v-show="!isExist">
+    名前を入力してください
+  </p>
+</div>
+<script src="3rd.js"></script>
+</body>
+</html>
