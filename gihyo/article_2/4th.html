@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>条件付きレンダリング</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="4th.css">
+</head>
+<body>
+<div id="example" v-bind:class="{'error': !isExist}">
+  <p>名前 {{ name }}</p>
+  <p v-show="!isExist">
+    名前を入力してください
+  </p>
+</div>
+<!-- 3rd の js を使う -->
+<script src="3rd.js"></script>
+</body>
+</html>
