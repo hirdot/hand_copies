@@ -1,4 +1,4 @@
-var counterButton = Vue.extend({
+var addButton = Vue.extend({
   template: '<span>{{counter}}個<button v-on:click="addToCart">追加</button></span>',
   data: function () {
     return {
@@ -8,7 +8,7 @@ var counterButton = Vue.extend({
   methods: {
     addToCart: function () {
       this.counter += 1
-      this.$emit('increment')
+      this.$emit('reflect')
     }
   },
 });
@@ -16,7 +16,7 @@ var counterButton = Vue.extend({
 new Vue({
   el: '#fruits-counter',
   components: {
-    'counter-button': counterButton
+    'counter-button': addButton
   },
   data: {
     total: 0,
