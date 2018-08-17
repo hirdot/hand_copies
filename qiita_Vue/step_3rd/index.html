@@ -9,7 +9,7 @@
 <div id="todoApp">
   <h2>Todo with Component</h2>
   <input type="text" v-model="todo" v-on:keyup.enter="add">
-  <span>doing {{doings}} / {{todos.length}} task</span>
+  <span>doing {{doing_count}} / {{todos.length}} task</span>
   <div class="hoge">
     <todo-template v-for="t in todos" :t="t" @intermediary="task_count"></todo-template>
   </div>

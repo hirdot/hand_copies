@@ -22,7 +22,7 @@ var app = new Vue({
   data: {
     todo: "",
     todos: [],
-    doings: 0
+    doing_count: 0
   },
   methods: {
     add: function() {
@@ -33,7 +33,7 @@ var app = new Vue({
       this.todo = ""
     },
     task_count: function(task) {
-      this.doings += task ? 1 : -1;
+      this.doing_count += task ? 1 : -1;
     }
   }
 });
