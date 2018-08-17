@@ -12,6 +12,11 @@
   <p v-show="!isExist">
     名前を入力してください
   </p>
+
+  <p>
+    <!--<input type="text" v-on:input="name = $event.target.value">-->
+    <input type="text" v-model.lazy="name">
+  </p>
 </div>
 <!-- 3rd の js を使う -->
 <script src="3rd.js"></script>
