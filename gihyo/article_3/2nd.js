@@ -26,7 +26,7 @@ new Vue({
     ]
   },
   methods: {
-    increment: function () {
+    inc: function () {
       this.total += 1
     }
   }

@@ -8,7 +8,7 @@
 <body>
 <div id="fruits-counter">
   <div v-for="fruit in fruits">
-    {{fruit.name}}: <counter-button v-on:increment="increment()"></counter-button>
+    {{fruit.name}}: <counter-button v-on:increment="inc()"></counter-button>
   </div>
   <p>合計: {{total}}</p>
 </div>
