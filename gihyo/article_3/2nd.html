@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="fruits-counter">
+  <div v-for="fruit in fruits">
+    {{fruit.name}}: <counter-button v-on:increment="increment()"></counter-button>
+  </div>
+  <p>合計: {{total}}</p>
+</div>
+<script src="2nd.js"></script>
+</body>
+</html>
