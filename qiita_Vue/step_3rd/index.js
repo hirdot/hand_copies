@@ -7,7 +7,7 @@ Vue.component("todo-template", {
   methods: {
     begin: function () {
       // this.task = !this.task;
-      this.$emit("donedoing", this.task);
+      this.$emit("intermediary", this.task);
     }
   }
 });
@@ -27,7 +27,7 @@ var app = new Vue({
       });
       this.todo = ""
     },
-    length: function(task) {
+    task_count: function(task) {
       this.doings += task ? 1 : -1;
     }
   }
