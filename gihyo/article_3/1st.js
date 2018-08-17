@@ -1,6 +1,6 @@
 Vue.component('apple-list', {
-  props: ['fruitsItem'],
-  template: '<li>{{fruitsItem.name}}</li>'
+  props: ['fruit'],
+  template: '<li>{{fruit.name}}</li>'
 });
 
 new Vue({
