@@ -6,7 +6,7 @@ Vue.component("todo-template", {
   template: "#todo-template",
   methods: {
     begin: function () {
-      this.task = !this.task;
+      // this.task = !this.task;
       this.$emit("donedoing", this.task);
     }
   }
