@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>名前:</strong>
+  <%= @shain.name %>
+</p>
+
+<p>
+  <strong>役職:</strong>
+  <%= @shain.yakushoku %>
+</p>
+
+<p>
+  <strong>基本給:</strong>
+  <%= @shain.kihonkyu %>
+</p>
+
+<p>
+  <strong>給与:</strong>
+  <%= @shain.salary %>
+</p>
+
+<p>
+    <%= link_to '起立を号令', standup_shain_path %>
+</p>
+<%= link_to 'Edit', edit_shain_path(@shain) %> |
+<%= link_to 'Back', shains_path %>
